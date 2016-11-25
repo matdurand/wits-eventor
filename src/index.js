@@ -7,7 +7,7 @@ export function getEventFromInput(userInput) {
     //worldWordBankPompette
     console.log(userInput);
     var result = dataExtractor.extractDatesFromText(userInput);
-
+    console.log(result.extractedDates[0].value);
     return {
         "originalInput": userInput,
         "time": result.extractedDates[0].dateTextExtracted
