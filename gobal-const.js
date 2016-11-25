@@ -51,13 +51,13 @@ export var english_times = [
     "tomorrow 10pm",
     "this wednesday",
     "next monday",
-    "on christmas day",
-    "next week on monday at 10",
+    // "on christmas day",
+    // "next week on monday at 10", // to verify
     "tomorrow at noon",
     "at 10 on nov 10th",
-    "10 minutes later",
-    "10 minutes earlier",
-    "minutes longer"
+    // "10 minutes later",
+    // "10 minutes earlier",
+    // "minutes longer"
 ];
 
 export var french_times = [
@@ -66,12 +66,10 @@ export var french_times = [
     "demain à 8am",
     "mercredi",
     "lundi prochain",
-    "à noël",
-    "next week on monday at 10",
-    "après demain à midi",
-    "le 10 novembre à 10am",
-    "10 minutes plus tard",
-    "10 minutes plus tôt",
-    "10 minutes plus long",
-    "10 minutes plus court"
+    // "à noël",
+    "lundi prochain à 10h",
+    // "après demain à midi",
+    // "le 10 novembre à 10am",
+    // "10 minutes plus tard",
+    // "10 minutes plus tôt"
 ];

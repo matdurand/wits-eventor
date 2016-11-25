@@ -10,10 +10,13 @@ import {
 import {getEventFromInput} from "../src/index";
 let expect = require('chai').expect;
 
-function testUserInputWithExpectedOutputs(testInput) {
+function testUserInputWithExpectedOutputs(testInput, action, subject, time) {
     it("generated test: " + testInput, function () {
         var result = getEventFromInput(testInput);
         expect(result.originalInput).to.eql(testInput);
+        expect(result.time).to.eql(time);
+        // expect(result.action).to.eql(action);
+        // expect(result.subject).to.eql(subject);
     });
 }
 
@@ -22,7 +25,7 @@ describe('Acceptance tests', function () {
         english_actions.forEach((action)=> {
             english_times.forEach((time)=> {
                 var testInput = action + " " + subject + " " + time;
-                testUserInputWithExpectedOutputs(testInput);
+                testUserInputWithExpectedOutputs(testInput, action, subject, time);
             })
         });
     });
@@ -31,7 +34,7 @@ describe('Acceptance tests', function () {
         french_actions.forEach((action)=> {
             french_times.forEach((time)=> {
                 var testInput = action + " " + subject + " " + time;
-                testUserInputWithExpectedOutputs(testInput);
+                testUserInputWithExpectedOutputs(testInput, action, subject, time);
             })
         });
     });
