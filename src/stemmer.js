@@ -1,5 +1,4 @@
 export class Stemmer {
-
     constructor() {
         this.stemmers = {};
         this.stemmers.fr = require('snowball-stemmer.jsx/dest/french-stemmer.common.js').FrenchStemmer;

@@ -13,7 +13,7 @@
     "url": "https://github.com/matdurand/wits-eventor/issues"
   },
   "scripts": {
-    "test": "mocha $(find ./test)",
+    "test": "mocha --compilers js:babel-core/register $(find ./test)",
     "acceptance": "mocha $(find ./acceptance_tests)",
     "all": "mocha test ./test ./acceptance_tests"
   },
@@ -24,10 +24,11 @@
     "mocha": "^3.2.0"
   },
   "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.18.2",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-register": "^6.18.0",
     "mocha": "^3.2.0",
     "snowball-stemmer.jsx": "^0.2.3"
-    "babel-cli": "^6.18.0",
-    "babel-preset-es2015": "^6.18.0",
-    "babel-register": "^6.18.0"
   }
 }
