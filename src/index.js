@@ -2,8 +2,7 @@ import {DateExtractor} from "./datesExtractor";
 import {generateKeywords} from "./keyword-extractor";
 import {Stemmer} from "./stemmer";
 
-
-export class WitsEventor {
+class WitsEventor {
     constructor() {
         this.dataExtractor = new DateExtractor();
         this.stemmer = new Stemmer();
@@ -26,3 +25,5 @@ export class WitsEventor {
         }
     }
 }
+
+export {WitsEventor as default}
