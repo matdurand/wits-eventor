@@ -56,7 +56,10 @@ function getTextLanguageFromResult(result) {
 
 function extractDateFromResult(result) {
     let extractedDate = {};
-    extractedDate.value = result.ref;
+    extractedDate.start = result.start.date();
+    if (result.end) {
+        extractedDate.end = result.end.date();
+    }
     extractedDate.dateTextExtracted = result.text;
     extractedDate.dateTextExtractedIndex = result.index;
     return extractedDate;
