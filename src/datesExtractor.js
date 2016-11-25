@@ -1,3 +1,24 @@
+//Outputs
+/*
+ * {
+ *   originalText,
+ *   textWithoutDatesKeyword,
+ *   extractedDate : [
+ *       {
+ *           dateTextExtractedIndex : (position dans l'orginialText),
+ *           dateTextExtracted : 'blbabla'
+ *           value : La date javascript
+ *       },
+ *       {
+ *
+ *       }
+ *   ],
+ *   usedLanguage (ex : 'fr', 'en')
+ * }
+ *
+ * */
+
+
 export class DateExtractor {
     constructor() {
         this.chrono = require('chrono-node');
