@@ -19,8 +19,7 @@
   },
   "homepage": "https://github.com/matdurand/wits-eventor#readme",
   "dependencies": {
-    "chrono-node": "^1.2.5",
-    "mocha": "^3.2.0"
+    "chrono-node": "^1.2.5"
   },
   "devDependencies": {
     "mocha": "^3.2.0",
