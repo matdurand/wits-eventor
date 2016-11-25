@@ -6,7 +6,7 @@ import {
     french_times,
     french_actions,
     french_subject
-} from "../gobal-const";
+} from "./test-const";
 import {getEventFromInput} from "../src/index";
 let expect = require('chai').expect;
 
@@ -21,18 +21,18 @@ function testUserInputWithExpectedOutputs(testInput, action, subject, time) {
 }
 
 describe('Acceptance tests', function () {
-    english_subject.forEach((subject)=> {
-        english_actions.forEach((action)=> {
-            english_times.forEach((time)=> {
+    english_subject.forEach((subject) => {
+        english_actions.forEach((action) => {
+            english_times.forEach((time) => {
                 var testInput = action + " " + subject + " " + time;
                 testUserInputWithExpectedOutputs(testInput, action, subject, time);
             })
         });
     });
 
-    french_subject.forEach((subject)=> {
-        french_actions.forEach((action)=> {
-            french_times.forEach((time)=> {
+    french_subject.forEach((subject) => {
+        french_actions.forEach((action) => {
+            french_times.forEach((time) => {
                 var testInput = action + " " + subject + " " + time;
                 testUserInputWithExpectedOutputs(testInput, action, subject, time);
             })
