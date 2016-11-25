@@ -1,4 +1,4 @@
-var english_subject = [
+export var english_subject = [
     "Practice",
     "meeting",
     "video",
@@ -14,7 +14,7 @@ var english_subject = [
     "curfew"
 ];
 
-var french_subject = [
+export var french_subject = [
     "Pratique",
     "réunion",
     "vidéo",
@@ -30,7 +30,7 @@ var french_subject = [
     "déjeuner",
     "couvre-feu"
 ];
-var english_actions = [
+export var english_actions = [
     "create",
     "cancel",
     "move",
@@ -39,14 +39,14 @@ var english_actions = [
     "new",
     "remove"
 ];
-var french_actions = [
+export var french_actions = [
     "annuler",
     "nouvelle",
     "nouveau",
     "déplacer"
 ];
 
-var english_times = [
+export var english_times = [
     "tomorrow at 10",
     "tomorrow 10pm",
     "this wednesday",
@@ -60,7 +60,7 @@ var english_times = [
     "minutes longer"
 ];
 
-var french_times = [
+export var french_times = [
     "demain à 10",
     "demain à 10pm",
     "demain à 8am",

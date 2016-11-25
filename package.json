@@ -15,8 +15,8 @@
   "scripts": {
     "test": "mocha --compilers js:babel-core/register $(find ./test)",
     "test-watch": "mocha --compilers js:babel-core/register --watch $(find ./test)",
-    "acceptance": "mocha $(find ./acceptance_tests)",
-    "all": "mocha test ./test ./acceptance_tests"
+    "acceptance": "mocha --compilers js:babel-core/register --watch $(find ./acceptance_tests)",
+    "all": "mocha --compilers js:babel-core/register --watch ./test ./acceptance_tests"
   },
   "homepage": "https://github.com/matdurand/wits-eventor#readme",
   "dependencies": {

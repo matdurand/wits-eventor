@@ -2,6 +2,9 @@ export function getEventFromInput(userInput) {
     //datesExtractor.call
     //stemmer.call
     //worldWordBankPompette
+    return {
+        "originalInput": userInput
+    }
 
 }
 
