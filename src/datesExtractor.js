@@ -1,22 +1,3 @@
-//Outputs
-/*
- * {
- *   originalText,
- *   textWithoutDatesKeyword,
- *   extractedDate : [
- *       {
- *           startedIndexInText : (position dans l'orginialText),
- *           value : La date javascript
- *       },
- *       {
- *
- *       }
- *   ],
- *   usedLanguage (ex : 'fr', 'en')
- * }
- *
- * */
-
 export class DateExtractor {
     constructor() {
         this.chrono = require('chrono-node');
@@ -35,12 +16,6 @@ export class DateExtractor {
                 textWithoutDatesKeywords = extractDatesKeyWordFromText(textWithoutDatesKeywords, result);
             });
 
-            console.log({
-                originalText,
-                textWithoutDatesKeywords,
-                extractedDates,
-                usedLanguage
-            });
             return {
                 originalText,
                 textWithoutDatesKeywords,
@@ -61,7 +36,8 @@ function getTextLanguageFromResult(result) {
 function extractDateFromResult(result) {
     let extractedDate = {};
     extractedDate.value = result.ref;
-    extractedDate.startedIndexInText = result.index;
+    extractedDate.dateTextExtracted = result.text;
+    extractedDate.dateTextExtractedIndex = result.index;
     return extractedDate;
 }
 
