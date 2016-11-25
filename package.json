@@ -3,9 +3,6 @@
   "version": "0.0.1",
   "description": "A natural language parser to extract events operations from user input",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/matdurand/wits-eventor.git"
@@ -15,9 +12,15 @@
   "bugs": {
     "url": "https://github.com/matdurand/wits-eventor/issues"
   },
+  "scripts": {
+    "test": "mocha test"
+  },
   "homepage": "https://github.com/matdurand/wits-eventor#readme",
   "dependencies": {
     "chrono-node": "^1.2.5",
+    "mocha": "^3.2.0"
+  },
+  "devDependencies": {
     "mocha": "^3.2.0",
     "snowball-stemmer.jsx": "^0.2.3"
   },
