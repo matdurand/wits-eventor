@@ -23,7 +23,8 @@
     "chai": "^3.5.0",
     "chrono-node": "^1.2.5",
     "keyword-extractor": "0.0.13",
-    "mocha": "^3.2.0"
+    "mocha": "^3.2.0",
+    "underscore": "^1.8.3"
   },
   "devDependencies": {
     "babel-cli": "^6.18.0",

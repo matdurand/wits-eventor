@@ -35,8 +35,7 @@ export var english_actions = [
     "cancel",
     "moved",
     "update",
-    "add",
-    "new",
+    "adding",
     "remove"
 ];
 export var french_actions = [
