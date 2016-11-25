@@ -7,18 +7,22 @@ import {
     french_actions,
     french_subject
 } from "./test-const";
-import {WitsEventor} from "../src/index";
+import {WitsEventor} from "../src/WitsEventor";
 let expect = require('chai').expect;
 
-let witsEventor = new WitsEventor();
+const eventor = new WitsEventor();
+eventor.addSubjectDictionary('en', english_subject);
+eventor.addSubjectDictionary('fr', french_subject);
+eventor.addActionDictionary('en', english_actions);
+eventor.addActionDictionary('fr', french_actions);
 
 function testUserInputWithExpectedOutputs(testInput, action, subject, time) {
     it("generated test: " + testInput, function () {
-        var result = witsEventor.getEventFromInput(testInput);
+        var result = eventor.getEventFromInput(testInput);
         expect(result.originalInput).to.eql(testInput);
         expect(result.time).to.eql(time);
-        // expect(result.action).to.eql(action);
-        // expect(result.subject).to.eql(subject);
+        //expect(result.action).to.eql(action);
+        expect(result.subject).to.eql(subject);
     });
 }
 

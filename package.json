@@ -1,6 +1,6 @@
 {
   "name": "wits-eventor",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "A natural language parser to extract events operations from user input",
   "main": "index.js",
   "repository": {
@@ -25,7 +25,8 @@
     "chai": "^3.5.0",
     "chrono-node": "^1.2.5",
     "keyword-extractor": "0.0.13",
-    "snowball-stemmer.jsx": "^0.2.3"
+    "snowball-stemmer.jsx": "^0.2.3",
+    "underscore": "^1.8.3"
   },
   "devDependencies": {
     "babel-cli": "^6.18.0",
