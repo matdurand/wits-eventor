@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/stemmer.js"],"names":["AAA","console","log","print"],"mappings":";;;;;;;;;;IAAaA,G,WAAAA,G;;;;;;;gCAED;AACJC,oBAAQC,GAAR,CAAY,KAAZ;AACH;;;;;;AAIL,IAAIF,GAAJ,GAAUG,KAAV","file":"stemmer.js","sourcesContent":["export class AAA {\n\n    print() {\n        console.log('aaa');\n    }\n\n}\n\nnew AAA().print();\n\n"]}
