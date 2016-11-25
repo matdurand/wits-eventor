@@ -2,13 +2,13 @@
 
 var _testConst = require("./test-const");
 
-var _index = require("../src/index");
+var _WitsEventor = require("../src/WitsEventor");
 
 var assert = require('assert');
 
 var expect = require('chai').expect;
 
-var eventor = new _index.WitsEventor();
+var eventor = new _WitsEventor.WitsEventor();
 eventor.addSubjectDictionary('en', _testConst.english_subject);
 eventor.addSubjectDictionary('fr', _testConst.french_subject);
 eventor.addActionDictionary('en', _testConst.english_actions);

@@ -7,7 +7,7 @@ import {
     french_actions,
     french_subject
 } from "./test-const";
-import {WitsEventor} from "../src/index";
+import {WitsEventor} from "../src/WitsEventor";
 let expect = require('chai').expect;
 
 const eventor = new WitsEventor();

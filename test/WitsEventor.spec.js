@@ -1,4 +1,4 @@
-import {WitsEventor} from "../src/Eventor";
+import {WitsEventor} from "../src/WitsEventor";
 let expect = require('chai').expect;
 
 describe('eventor', () => {
