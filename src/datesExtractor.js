@@ -17,33 +17,39 @@
  *
  * */
 
-let chrono = require('chrono-node');
-let text = "Tomorrow's practice cancelled, moved to next wednesday";
-extractDatesFromText(text);
+export class DateExtractor {
+    constructor() {
+        this.chrono = require('chrono-node');
+    }
 
-export function extractDatesFromText(text) {
-    let results = chrono.parse(text);
-    let extractedDates = [];
-    let originalText = text;
-    let textWithoutDatesKeywords = text;
-    let usedLanguage = getTextLanguageFromResult(results[0]);
+    extractDatesFromText(text) {
+        let results = this.chrono.parse(text);
+        if (results.length > 0) {
+            let extractedDates = [];
+            let originalText = text;
+            let textWithoutDatesKeywords = text;
+            let usedLanguage = getTextLanguageFromResult(results[0]);
 
-    results.forEach((result) => {
-        extractedDates.push(extractDateFromResult(result));
-        textWithoutDatesKeywords = extractDatesKeyWordFromText(textWithoutDatesKeywords, result);
-    });
+            results.forEach((result) => {
+                extractedDates.push(extractDateFromResult(result));
+                textWithoutDatesKeywords = extractDatesKeyWordFromText(textWithoutDatesKeywords, result);
+            });
 
-    let test = {
-        originalText,
-        textWithoutDatesKeywords,
-        extractedDates,
-        usedLanguage
-    };
-    console.log(test);
-    return test;
-
+            console.log({
+                originalText,
+                textWithoutDatesKeywords,
+                extractedDates,
+                usedLanguage
+            });
+            return {
+                originalText,
+                textWithoutDatesKeywords,
+                extractedDates,
+                usedLanguage
+            };
+        }
+    }
 }
-
 
 function getTextLanguageFromResult(result) {
     for (let name in result.tags) {
