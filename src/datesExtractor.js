@@ -5,7 +5,8 @@
  *   textWithoutDatesKeyword,
  *   extractedDate : [
  *       {
- *           startedIndexInText : (position dans l'orginialText),
+ *           dateTextExtractedIndex : (position dans l'orginialText),
+ *           dateTextExtracted : 'blbabla'
  *           value : La date javascript
  *       },
  *       {
@@ -61,7 +62,8 @@ function getTextLanguageFromResult(result) {
 function extractDateFromResult(result) {
     let extractedDate = {};
     extractedDate.value = result.ref;
-    extractedDate.startedIndexInText = result.index;
+    extractedDate.dateTextExtracted = result.text;
+    extractedDate.dateTextExtractedIndex = result.index;
     return extractedDate;
 }
 
