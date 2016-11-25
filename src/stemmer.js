@@ -13,7 +13,7 @@ export class Stemmer {
 
         if (keywords) {
             if (Array.isArray(keywords)) {
-                keywords.map((keyword) => {
+                return keywords.map((keyword) => {
                     return stem(stemmerFactory, keyword);
                 });
             } else if (typeof keywords === 'string') {

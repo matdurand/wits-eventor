@@ -2,7 +2,7 @@
 /*
  * {
  *   originalText,
- *   textWithoutDatesKeyword,
+ *   textWithoutDatesKeywords,
  *   extractedDate : [
  *       {
  *           dateTextExtractedIndex : (position dans l'orginialText),
