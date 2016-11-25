@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/matdurand/wits-eventor/issues"
   },
-  "homepage": "https://github.com/matdurand/wits-eventor#readme"
+  "homepage": "https://github.com/matdurand/wits-eventor#readme",
+  "dependencies": {
+    "chrono-node": "^1.2.5"
+  }
 }
