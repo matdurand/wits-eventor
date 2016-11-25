@@ -3,6 +3,33 @@ var french_subject = ["Pratique", "réunion", "vidéo", "entrainement", "parti",
 var english_actions = ["create", "cancel", "move", "update", "add", "new", "remove"];
 var french_actions = ["annuler", "nouvelle", "nouveau", "déplacer"];
 
+english_times = [
+    "tomorrow at 10",
+    "tomorrow 10pm",
+    "this wednesday",
+    "next monday",
+    "on christmas day",
+    "next week on monday at 10",
+    "tomorrow at noon",
+    "at 10 on nov 10th",
+    "10 minutes later",
+    "10 minutes earlier",
+    "minutes longer"
+];
+
+french_times = [
+    "tomorrow at 10",
+    "tomorrow 10pm",
+    "this wednesday",
+    "next monday",
+    "on christmas day",
+    "next week on monday at 10",
+    "tomorrow at noon",
+    "at 10 on nov 10th",
+    "10 minutes later",
+    "10 minutes earlier",
+    "minutes longer"
+];
 
 var assert = require('assert');
 describe('Array2', function () {
