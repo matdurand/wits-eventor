@@ -1,20 +1,38 @@
 var assert = require('assert');
-import {english_times, english_subject, english_actions} from "../gobal-const";
+import {
+    english_times,
+    english_subject,
+    english_actions,
+    french_times,
+    french_actions,
+    french_subject
+} from "../gobal-const";
 import {getEventFromInput} from "../src/index";
 let expect = require('chai').expect;
 
-console.log(english_times);
-console.log(english_subject);
-console.log(english_actions);
+function testUserInputWithExpectedOutputs(testInput) {
+    it("generated test: " + testInput, function () {
+        var result = getEventFromInput(testInput);
+        expect(result.originalInput).to.eql(testInput);
+    });
+}
 
 describe('Acceptance tests', function () {
     english_subject.forEach((subject)=> {
-        english_times.forEach((time)=> {
-            var testInput = subject + " " + time;
-            it("generated test: " + testInput, function () {
-                var result = getEventFromInput(testInput);
-                expect(result.originalInput).to.eql(testInput);
-            });
-        })
+        english_actions.forEach((action)=> {
+            english_times.forEach((time)=> {
+                var testInput = action + " " + subject + " " + time;
+                testUserInputWithExpectedOutputs(testInput);
+            })
+        });
+    });
+
+    french_subject.forEach((subject)=> {
+        french_actions.forEach((action)=> {
+            french_times.forEach((time)=> {
+                var testInput = action + " " + subject + " " + time;
+                testUserInputWithExpectedOutputs(testInput);
+            })
+        });
     });
 });
