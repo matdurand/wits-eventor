@@ -17,12 +17,9 @@
   },
   "homepage": "https://github.com/matdurand/wits-eventor#readme",
   "dependencies": {
+    "chai": "^3.5.0",
     "chrono-node": "^1.2.5",
     "mocha": "^3.2.0"
-  },
-  "devDependencies": {
-    "mocha": "^3.2.0",
-    "snowball-stemmer.jsx": "^0.2.3"
   },
   "devDependencies": {
     "babel-cli": "^6.18.0",
