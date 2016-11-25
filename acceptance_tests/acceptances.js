@@ -11,6 +11,7 @@ import {WitsEventor} from "../src/WitsEventor";
 let expect = require('chai').expect;
 
 const eventor = new WitsEventor();
+
 eventor.addSubjectDictionary('en', english_subject);
 eventor.addSubjectDictionary('fr', french_subject);
 eventor.addActionDictionary('en', english_actions);

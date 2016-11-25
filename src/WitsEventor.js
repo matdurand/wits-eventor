@@ -30,6 +30,7 @@ export class WitsEventor {
                 return {
                     originalInput: userInput,
                     time: dateExtractionResult.extractedDates[0].dateTextExtracted,
+                    timeValue: dateExtractionResult.extractedDates[0].value,
                     action,
                     subject
                 }

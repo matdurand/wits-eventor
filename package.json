@@ -1,6 +1,6 @@
 {
   "name": "wits-eventor",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "A natural language parser to extract events operations from user input",
   "main": "index.js",
   "repository": {
