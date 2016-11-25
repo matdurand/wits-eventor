@@ -3,7 +3,7 @@ import {DateExtractor} from "./datesExtractor";
 import {Stemmer} from "./stemmer";
 import {_} from "underscore";
 
-export class Eventor {
+export class WitsEventor {
     constructor() {
         this.subjectDictionaries = {};
         this.actionDictionaries = {};

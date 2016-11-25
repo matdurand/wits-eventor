@@ -1,2 +1,2 @@
-import {Eventor} from "./Eventor";
-export {Eventor as default};
+import {WitsEventor} from "./Eventor";
+export {WitsEventor as default};
