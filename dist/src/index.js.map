@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/index.js"],"names":["default"],"mappings":";;;;;;;AAAA;;QACuBA,O","file":"index.js","sourcesContent":["import {WitsEventor} from \"./Eventor\";\nexport {WitsEventor as default};"]}
