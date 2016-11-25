@@ -33,7 +33,7 @@ export var french_subject = [
 export var english_actions = [
     "create",
     "cancel",
-    "move",
+    "moved",
     "update",
     "add",
     "new",
