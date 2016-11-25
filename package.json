@@ -13,7 +13,9 @@
     "url": "https://github.com/matdurand/wits-eventor/issues"
   },
   "scripts": {
-    "test": "mocha test"
+    "test": "mocha $(find ./test)",
+    "acceptance": "mocha $(find ./acceptance_tests)",
+    "all": "mocha test ./test ./acceptance_tests"
   },
   "homepage": "https://github.com/matdurand/wits-eventor#readme",
   "dependencies": {
