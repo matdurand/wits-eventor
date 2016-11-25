@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/matdurand/wits-eventor/issues"
   },
-  "homepage": "https://github.com/matdurand/wits-eventor#readme"
+  "homepage": "https://github.com/matdurand/wits-eventor#readme",
+  "dependencies": {
+    "mocha": "^3.2.0"
+  }
 }
